@@ -9,7 +9,7 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    if @student.active = false 
+    if @student.active == false 
       @student.update_attribute(:active, true)
     else 
       @student.update_attribute(:active, false)
