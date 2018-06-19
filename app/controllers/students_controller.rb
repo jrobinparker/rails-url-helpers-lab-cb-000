@@ -9,12 +9,7 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    status = @student.active 
-    if status = true 
-      status = false 
-    else 
-      status = true 
-    end 
+    @student.active = false 
     redirect_to student_path(@student)
   end
 
