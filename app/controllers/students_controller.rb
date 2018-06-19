@@ -9,8 +9,8 @@ class StudentsController < ApplicationController
   end
   
   def activate
-    if @student.active = false
-      @student.active = true
+    if @student.active = true
+      @student.active = false
     else
       @student.active = false 
     end 
