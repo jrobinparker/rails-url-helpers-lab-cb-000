@@ -14,6 +14,7 @@ class StudentsController < ApplicationController
     else 
       @student.update_attribute(:active, false)
     end
+    redirect_to student_path(@student)
   end
 
   private
