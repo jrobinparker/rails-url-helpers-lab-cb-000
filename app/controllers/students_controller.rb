@@ -12,7 +12,7 @@ class StudentsController < ApplicationController
     if @student.active == false
       @student.active == true
     else
-      @student.active = false 
+      @student.active == true 
     end 
     redirect_to student_path(@student)
   end
